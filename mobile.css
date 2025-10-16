@@ -68,6 +68,10 @@
         height: auto;
     }
 
+    .plano1 {
+        max-height: 450px;
+    }
+
     #planos {
         margin-bottom: 100px;
     }
