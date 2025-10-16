@@ -23,7 +23,7 @@ body, html {
 
 #topo {
     grid-area: 1 / 1 / 2 / -1;
-    background-color: rgba(8, 8, 8, 0.418);
+    background-color: rgba(8, 8, 8, 0.644);
 }
 header {
     font-size: 1.3em;
@@ -31,11 +31,19 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: auto;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 20px;
-    padding: 15px 15px 15px 15px;
+    padding: 0px 15px 30px 15px;
+    position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%; 
+        z-index: 100; 
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 20px;
 }
 header img {
     order: 0;
@@ -69,7 +77,6 @@ header nav a:hover {
 #contato {
     text-align: center;
     height: auto;
-    display: block;
     flex: 0 1 175px;
     padding: 10px ;
     margin-right: 10px;
@@ -88,7 +95,7 @@ header nav a:hover {
     grid-area: 2 / 1 / 3 / -1;
     text-align: center;
     min-height: 800px;
-    position: relative; 
+    position: relative;
     z-index: 1; 
     background-image: none;
     background-attachment: none;
@@ -124,15 +131,20 @@ header nav a:hover {
 #principal h1 {
     text-align: center;
     font-size: 2.8em;
-    padding-top: 50px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
     font-family: 'Orbitron', sans-serif;
+    font-size: clamp(2.1rem, 6vw, 5rem);
+    overflow: hidden;
 }
 #principal p {
     background-color: transparent; 
     color: white;
     font-size: 1.3em;
     text-align: center;
-    margin-top: 20px; 
+    margin-top: 10px; 
 }
 #principal ul {
     text-align: center; 
@@ -179,13 +191,12 @@ h1 strong {
     grid-area: 3 / 2 / 4 / -2;
     display: grid;
     gap: 10px;
-    grid-template-rows: 50px ;
+    grid-template-rows: 80px;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     justify-content: space-around;
     align-items: center;
-    margin: 90px;
-    padding: 15px;
+    margin: 100px 10px 100px 10px;
 }
 #planos h1 {
     grid-area: 1 / 1 / -1 / -1;
@@ -255,114 +266,4 @@ h1 strong {
 }
 #rodape {
     grid-area: -2 / 1 / -1 / -1;
-}
-.menu-hamburguer {
-    display: none;
-}
-
-
-
-
-@media screen and (max-width: 899px) {
-    
-    #container {
-        grid-template-columns: 1fr;
-    }
-
-    #principal-fundo {
-        min-height: 800px;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: nowrap;
-    }
-
-    #principal h1 {
-        font-size: 2.0em;
-    }
-    
-    header nav {
-        display: none; 
-    }
-    #contato {
-        display: none; 
-    }
-    .menu-hamburguer {
-        display: block;
-        order: 1;
-        cursor: pointer;
-        font-family: 'Material Symbols Outlined', sans-serif !important;
-        font-size: 38px;
-        font-weight: normal;
-        font-style: normal;
-        line-height: 1;
-        letter-spacing: normal;
-        text-transform: none;
-        white-space: nowrap;
-        word-wrap: normal;
-        direction: ltr;
-        -webkit-font-smoothing: antialiased;
-        display: block;
-        color: #fff !important;
-    }
-    #planos {
-        display: grid;
-        grid-template-columns: 2% 1fr 2%;
-    }
-    #plano{
-        width: 900px;
-    }
-    #contato { 
-        display: none; 
-    }
-
-@media screen and (min-width: 900px) {
-    .menu-hamburguer {
-        display: none !important; 
-    }
-    #container {
-        grid-template: 80px 1fr 1fr 40px / 2% 1fr 1fr 1fr 2%; 
-    }
-    header nav {
-        display: block; 
-    }
-    #contato {
-        display: flex; 
-        margin-left: auto;
-        margin-right: 20px;
-        justify-content: center;
-        align-items: center;
-    }  
-    
-    #planos {
-        grid-template-columns: 1fr 1fr 1fr; 
-    }
-}
-
-@media screen and (max-width: 899px) {
-    
-    #container {
-        grid-template-columns: 1fr;
-    }
-    header {
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-    header nav {
-        display: none;
-    }
-    #contato {
-        display: none;
-    }
-    .menu-hamburguer {
-        display: block; 
-    }
-    #planos {
-        grid-template-columns: 1fr;
-    }
 }
