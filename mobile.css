@@ -55,11 +55,20 @@
     }
     #planos {
         display: block;
+        overflow: visible;
+        position: static;
         grid-template-columns: 1fr;
         gap: 20px;
         margin: 50px 20px 0px 20px;
+        height: auto;
     }
 
     .plano {
         margin-bottom: 30px;
+        height: auto;
     }
+
+    #planos {
+        margin-bottom: 100px;
+    }
+    
