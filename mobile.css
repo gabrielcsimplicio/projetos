@@ -1,42 +1,47 @@
 @charset "UTF-8";
-    header {
+
+#container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template: 50px 1fr 1fr 60px / 2% 1fr 2%;
+}
+header {
         position: fixed; 
         top: 0;
         left: 0;
         width: 100%; 
         z-index: 100; 
-        display: flex; 
-        align-items: center;
-        justify-content: space-between;
+        display: flex;
         padding: 15px 20px;
-    }
-    #topo {
+}
+#topo {
         padding: 10px;
         justify-content: space-between;
-    }
-    header {
+}
+header {
         display: flex;
         align-items: center;
         justify-content: center; 
         padding: 15px 20px; 
-    }
-    header img {
+}
+header img {
         order: 0;
         max-width: 350px;
         min-width: 200px; 
         height: auto;
         display: block;
         flex: 1 1 300px;
-    }
-    #logo {
+}
+#logo {
         max-width: 120px;
         height: auto;
-    }
+}
 
 
-    header nav { 
-        display: none !important;
-    }
+header nav { 
+    display: none !important;
+}
     #contato-meio {
         position: static; 
         z-index: auto;
@@ -61,7 +66,6 @@
     margin-top: 10px; 
     }   
     #planos {
-        display: block;
         overflow: visible;
         position: static !important;
         flex-direction: column;
@@ -69,19 +73,11 @@
         gap: 20px;
         margin: 20px 20px 20px 20px;
         height: auto !important;
-
+        text-align: center;
     }
 
     .plano {
         margin-bottom: 30px;
-        height: auto;
-    }
-
-    .plano1 {
-        max-height: 450px;
-    }
-    .plano3 {
-        max-height: 440px;
     }
     #contato {
         display: none;
@@ -89,3 +85,11 @@
     #ccontato-meio {
         display: none;
     }
+
+    #divContainer {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    

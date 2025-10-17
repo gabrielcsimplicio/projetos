@@ -16,9 +16,9 @@ body, html {
 
 #container {
     display: grid;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
-    grid-template: 80px 1fr 1fr 80px / 2% 1fr 1fr 1fr 2%;
+    grid-template: 80px 1fr 1fr auto / 2% 1fr 1fr 1fr 2%;
 }
 
 #topo {
@@ -202,13 +202,15 @@ h1 strong {
 .plano {
     text-align: center; 
     font-size: 1.3em;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 20px 10px 20px 10px;
     list-style-position: inside;
     display: inline-block; 
     color: white;
     border: 2px solid lightgray;
     border-radius: 15px;
+    max-height: 420px;
+    max-width: 500px;
+    margin: auto;
 }
 #plano1:hover, #plano2:hover, #plano3:hover {
     box-shadow: 0 0 20px 5px rgba(40, 152, 226, 0.8); 
@@ -244,6 +246,7 @@ h1 strong {
     order: 2;
     padding: 0px 15px;
     text-align: center;
+    transition: box-shadow 0.3s ease, color 0.3s ease;
 }
 #prata {
     color: rgb(192, 192, 192);
@@ -253,8 +256,9 @@ h1 strong {
     height: 100%;
     width: 100%;
     order: 3;
-    padding: 0px 15px;
+    padding: 15px 15px;
     text-align: center;
+    transition: box-shadow 0.3s ease, color 0.3s ease;
 }
 #ouro {
     color: rgb(255, 215, 0);
@@ -264,7 +268,7 @@ h1 strong {
     grid-area: -2 / 1 / -1 / -1;
     color: white;
     text-align: center;
-    margin-top: 0px;
+    align-self: center;
 }
 #rodape a {
     text-decoration: none;
@@ -274,7 +278,5 @@ h1 strong {
 }
 #rodape a:hover {
     text-shadow: 0px 0px 10px white;
-}
-.plano {
-    max-height: 420px;
+    color: rgba(40, 152, 226, 0.8);
 }
