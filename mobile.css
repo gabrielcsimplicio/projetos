@@ -6,6 +6,9 @@
     width: 100vw;
     grid-template: 50px 1fr 1fr 60px / 2% 1fr 2%;
 }
+main {
+    margin-bottom: 50px;
+}
 header {
         position: fixed; 
         top: 0;
@@ -75,10 +78,6 @@ header nav {
         height: auto !important;
         text-align: center;
     }
-
-    .plano {
-        margin-bottom: 30px;
-    }
     #contato {
         display: none;
     }
@@ -92,4 +91,3 @@ header nav {
         min-height: 100vh;
     }
 
-    
