@@ -56,11 +56,13 @@
     #planos {
         display: block;
         overflow: visible;
-        position: static;
+        position: static !important;
+        flex-direction: column;
         grid-template-columns: 1fr;
         gap: 20px;
-        margin: 50px 20px 0px 20px;
-        height: auto;
+        margin: 20px 20px 0px 20px;
+        height: auto !important;
+        
     }
 
     .plano {
@@ -71,7 +73,9 @@
     .plano1 {
         max-height: 450px;
     }
-
+    .plano3 {
+        max-height: 440px;
+    }
     #planos {
         margin-bottom: 100px;
     }
