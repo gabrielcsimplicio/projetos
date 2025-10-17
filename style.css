@@ -18,7 +18,7 @@ body, html {
     display: grid;
     height: 100vh;
     width: 100vw;
-    grid-template: 120px 1fr 1fr 80px / 2% 1fr 1fr 1fr 2%;
+    grid-template: 80px 1fr 1fr 80px / 2% 1fr 1fr 1fr 2%;
 }
 
 #topo {
@@ -123,9 +123,6 @@ header nav a:hover {
 }
 #principal {
     grid-area: 2 / 2 / 3 / 4;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 300px;
     font-family: 'Exo 2', sans-serif;
 }
 #principal h1 {
