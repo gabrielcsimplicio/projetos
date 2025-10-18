@@ -1,5 +1,3 @@
-Ola, 
+Ola,
 
-Essa é a minha pasta com projetos para exposição.
-
-Irei atualizar esse reposítorio com meus novos conhecimentos assim que for progredindo na área.
+Essa é uma landing page para uma empresa fictícia que vende o serviço de automações empresariais.
